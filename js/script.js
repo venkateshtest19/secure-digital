@@ -1,13 +1,53 @@
 document.addEventListener("DOMContentLoaded", function() {
     
     // ==========================================
-    // 1. PRODUCT PAGE LOGIC (Only runs on product.html)
+    // 1. MOBILE MENU TOGGLE
+    // ==========================================
+    const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
+    const nav = document.querySelector('nav');
+
+    if (mobileMenuToggle && nav) {
+        mobileMenuToggle.addEventListener('click', () => {
+            mobileMenuToggle.classList.toggle('active');
+            nav.classList.toggle('active');
+        });
+        
+        // Close menu when clicking on a link
+        const navLinks = nav.querySelectorAll('a');
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenuToggle.classList.remove('active');
+                nav.classList.remove('active');
+            });
+        });
+        
+        // Close menu when clicking outside
+        document.addEventListener('click', (e) => {
+            if (!nav.contains(e.target) && !mobileMenuToggle.contains(e.target)) {
+                mobileMenuToggle.classList.remove('active');
+                nav.classList.remove('active');
+            }
+        });
+    }
+
+    // ==========================================
+    // 2. FAQ ACCORDION LOGIC
+    // ==========================================
+    const faqQuestions = document.querySelectorAll('.faq-question');
+    faqQuestions.forEach(button => {
+        button.addEventListener('click', () => {
+            const faqItem = button.parentElement;
+            faqItem.classList.toggle('active');
+        });
+    });
+
+    // ==========================================
+    // 3. PRODUCT PAGE LOGIC
     // ==========================================
     if (window.location.pathname.includes("product.html")) {
         const urlParams = new URLSearchParams(window.location.search);
         let productId = urlParams.get('id');
 
-        // Fallback if no ID is provided
         if (!productId) {
             productId = "norton-360-deluxe";
             window.history.replaceState({}, document.title, "?id=" + productId);
@@ -16,17 +56,13 @@ document.addEventListener("DOMContentLoaded", function() {
         const product = productsData.find(p => p.id === productId);
 
         if (product) {
-            // Update Page Title
             document.title = product.name + " | Secure Digital";
-
-            // Update Text Content
             document.getElementById('p-title').innerText = product.name;
             document.getElementById('p-price').innerText = product.price;
             document.getElementById('p-price-sticky').innerText = product.price;
             document.getElementById('p-desc').innerText = product.shortDesc;
             document.getElementById('p-image-text').innerHTML = `[ ${product.name} Image ]<br>(Replace with actual image)`;
 
-            // Update Features List
             const featuresList = document.getElementById('p-features');
             featuresList.innerHTML = ''; 
             product.features.forEach(feature => {
@@ -35,7 +71,6 @@ document.addEventListener("DOMContentLoaded", function() {
                 featuresList.appendChild(li);
             });
 
-            // Update Badge (if it exists)
             if (product.badge) {
                 const badge = document.createElement('div');
                 badge.className = `product-badge ${product.badgeClass}`;
@@ -49,13 +84,12 @@ document.addEventListener("DOMContentLoaded", function() {
                 imageContainer.appendChild(badge);
             }
         } else {
-            // Redirect to shop if invalid ID
             window.location.href = "shop.html";
         }
     }
 
     // ==========================================
-    // 2. CONTACT PAGE SMART PRE-FILL (Only runs on contact.html)
+    // 4. CONTACT PAGE SMART PRE-FILL
     // ==========================================
     if (window.location.pathname.includes("contact.html")) {
         const urlParams = new URLSearchParams(window.location.search);
@@ -64,16 +98,12 @@ document.addEventListener("DOMContentLoaded", function() {
         if (productId) {
             const product = productsData.find(p => p.id === productId);
             if (product) {
-                // Pre-select the product in the dropdown
                 const selectBox = document.getElementById('product');
-                if (selectBox) {
-                    selectBox.value = productId;
-                }
+                if (selectBox) selectBox.value = productId;
                 
-                // Pre-fill the message box to make it easy for the user
                 const messageBox = document.getElementById('message');
                 if (messageBox && messageBox.value === "") {
-                    messageBox.value = `Hi, I am interested in purchasing the ${product.name} (${product.price}). Please provide more details or let me know the next steps.`;
+                    messageBox.value = `Hi, I am interested in purchasing the ${product.name} (${product.price}). Please provide more details.`;
                 }
             }
         }
