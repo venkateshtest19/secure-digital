@@ -1,1 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ | Secure Digital</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Secure <span>Digital</span></div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <a href="tel:1234567890" class="btn-primary">Talk to Sales</a>
+    </header>
 
+    <section class="page-header">
+        <div class="container">
+            <h1>Frequently Asked <span>Questions</span></h1>
+            <p>Everything you need to know about our licenses and process.</p>
+        </div>
+    </section>
+
+    <section class="product-detail-section">
+        <div class="container">
+            <div class="faq-container">
+                <div class="faq-item">
+                    <button class="faq-question">Are these license keys 100% genuine?</button>
+                    <div class="faq-answer">Yes, absolutely. Secure Digital is an authorized third-party reseller. All our license keys are sourced directly from official distributors and are fully legitimate, eligible for official manufacturer updates and support.</div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">How will I receive my license key?</button>
+                    <div class="faq-answer">Once your purchase is confirmed over the phone with our sales team, your genuine license key and installation instructions will be sent to you instantly via email or SMS, based on your preference.</div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">Do you provide installation support?</button>
+                    <div class="faq-answer">We provide basic guidance and direct you to the official manufacturer's installation resources. For advanced technical troubleshooting, we recommend contacting the software manufacturer's official support team, as per our reseller agreement.</div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">Why are your prices lower than the official websites?</button>
+                    <div class="faq-answer">As a high-volume authorized reseller, we receive wholesale pricing from distributors. We pass these savings directly to our customers, allowing us to offer competitive prices without compromising on authenticity.</div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">What is your refund policy?</button>
+                    <div class="faq-answer">Because we sell digital goods, refunds are only issued if the key provided is invalid, fails to activate, or if we sent the wrong product. Once a key is revealed and delivered, it cannot be refunded. Please review our full Refund Policy for details.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-links">
+                    <h3>Secure Digital</h3>
+                    <p>55 East 10th Street,<br>New York, NY 10003<br>United States</p>
+                    <p style="margin-top: 10px;">Phone: <a href="tel:1234567890" style="color: var(--primary-color);">123-456-7890</a></p>
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="shop.html">Shop Antivirus</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h3>Legal & Policies</h3>
+                    <ul>
+                        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                        <li><a href="refund-policy.html">Refund Policy</a></li>
+                        <li><a href="disclaimer.html">Disclaimer</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="disclaimer-box">
+                <strong>IMPORTANT TRADEMARK & RESELLER DISCLAIMER</strong>
+                Secure Digital is an independent, authorized third-party reseller of software and hardware products. We are not affiliated with, endorsed by, or sponsored by the respective manufacturers. All product names, logos, images, and brands are the property of their respective owners. Any use of these names is strictly for identification purposes only.
+            </div>
+            <div class="copyright">&copy; 2026 Secure Digital. All Rights Reserved.</div>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+    <script>
+        // Simple FAQ Accordion Logic
+        document.querySelectorAll('.faq-question').forEach(button => {
+            button.addEventListener('click', () => {
+                const faqItem = button.parentElement;
+                faqItem.classList.toggle('active');
+            });
+        });
+    </script>
+</body>
+</html>
