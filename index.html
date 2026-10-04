@@ -5,39 +5,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Secure Digital | Authorized Antivirus Reseller in NYC</title>
     <meta name="description" content="Secure Digital is an authorized reseller of Norton, McAfee, Bitdefender, and more. Get genuine antivirus licenses instantly.">
-    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    <!-- Custom CSS -->
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-    <!-- Header -->
+    <!-- Header with Mobile Menu -->
     <header>
-        <div class="logo">Secure <span>Digital</span></div>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="shop.html">Shop</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-        <a href="tel:1234567890" class="btn-primary">Talk to Sales</a>
+        <div class="header-left">
+            <div class="logo">Secure <span>Digital</span></div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="header-right">
+            <a href="tel:1234567890" class="btn-primary header-btn">Talk to Sales</a>
+            <button class="mobile-menu-toggle" aria-label="Toggle Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
     </header>
 
-    <!-- Hero Section -->
+    <!-- Hero Section with Image -->
     <section class="hero">
-        <div class="container">
-            <h1>Premium Antivirus Protection at <span>Unbeatable Prices</span></h1>
-            <p>Based in New York City. We are an authorized reseller providing genuine, instant-delivery software licenses for individuals and businesses.</p>
-            <a href="shop.html" class="btn-primary">Browse Licenses</a>
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1>Premium Antivirus Protection at <span>Unbeatable Prices</span></h1>
+                <p>Based in New York City. We are an authorized reseller providing genuine, instant-delivery software licenses for individuals and businesses. Get protected today with the world's leading cybersecurity brands.</p>
+                <a href="shop.html" class="btn-primary">Browse Licenses</a>
+            </div>
+            <div class="hero-image">
+                <div class="hero-image-placeholder">
+                    [ Hero Image ]<br>
+                    (Cybersecurity/Shield Graphic)
+                </div>
+            </div>
         </div>
     </section>
 
-    <!-- Trust Badges Section -->
+    <!-- Trust Badges Section - 6 Brands in 3x2 Grid -->
     <section class="trust-badges">
         <div class="container">
             <p class="section-subtitle">Authorized Reseller Of</p>
@@ -47,12 +62,12 @@
                 <div class="brand-item">Bitdefender</div>
                 <div class="brand-item">Quick Heal</div>
                 <div class="brand-item">NPAV</div>
-                <div class="brand-item">LifeLock</div>
+                <div class="brand-item">Avast</div>
             </div>
         </div>
     </section>
 
-    <!-- Featured Products Section -->
+    <!-- Featured Products - 6 Products -->
     <section class="featured-products">
         <div class="container">
             <h2 class="section-title">Our Best Selling Products</h2>
@@ -61,23 +76,32 @@
             <div class="product-grid">
                 <!-- Product 1 -->
                 <div class="product-card">
-                    <div class="product-badge">Popular</div>
-                    <h3>Norton 360 Deluxe 2026</h3>
-                    <p class="product-desc">Complete protection for up to 5 devices</p>
-                    <div class="product-price">$29.99</div>
-                    <a href="product.html?id=norton-360-deluxe" class="btn-product">View Details</a>
+                    <div class="product-badge best-value">Best Value</div>
+                    <div class="product-image">
+                        <div class="product-image-placeholder">[ NPAV Image ]</div>
+                    </div>
+                    <h3>NPAV Net Protector</h3>
+                    <p class="product-desc">Affordable Antivirus Protection</p>
+                    <div class="product-price">$9.00</div>
+                    <a href="product.html?id=npav-protector" class="btn-product">View Details</a>
                 </div>
 
                 <!-- Product 2 -->
                 <div class="product-card">
-                    <h3>Bitdefender Antivirus Plus</h3>
-                    <p class="product-desc">Advanced threat defense</p>
-                    <div class="product-price">$19.00</div>
-                    <a href="product.html?id=bitdefender-plus" class="btn-product">View Details</a>
+                    <div class="product-image">
+                        <div class="product-image-placeholder">[ Quick Heal Image ]</div>
+                    </div>
+                    <h3>Quick Heal AntiVirus Pro</h3>
+                    <p class="product-desc">Robust security for your PC</p>
+                    <div class="product-price">$18.00</div>
+                    <a href="product.html?id=quick-heal-pro" class="btn-product">View Details</a>
                 </div>
 
                 <!-- Product 3 -->
                 <div class="product-card">
+                    <div class="product-image">
+                        <div class="product-image-placeholder">[ McAfee Image ]</div>
+                    </div>
                     <h3>McAfee AntiVirus</h3>
                     <p class="product-desc">1 User - 1 Year License</p>
                     <div class="product-price">$19.00</div>
@@ -86,11 +110,36 @@
 
                 <!-- Product 4 -->
                 <div class="product-card">
-                    <div class="product-badge best-value">Best Value</div>
-                    <h3>NPAV Net Protector</h3>
-                    <p class="product-desc">Affordable protection</p>
-                    <div class="product-price">$9.00</div>
-                    <a href="product.html?id=npav-protector" class="btn-product">View Details</a>
+                    <div class="product-image">
+                        <div class="product-image-placeholder">[ Bitdefender Image ]</div>
+                    </div>
+                    <h3>Bitdefender Antivirus Plus</h3>
+                    <p class="product-desc">Advanced threat defense</p>
+                    <div class="product-price">$19.00</div>
+                    <a href="product.html?id=bitdefender-plus" class="btn-product">View Details</a>
+                </div>
+
+                <!-- Product 5 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <div class="product-image-placeholder">[ Norton 360 Image ]</div>
+                    </div>
+                    <h3>Norton 360 Deluxe 2026</h3>
+                    <p class="product-desc">Complete protection for 5 devices</p>
+                    <div class="product-price">$29.99</div>
+                    <a href="product.html?id=norton-360-deluxe" class="btn-product">View Details</a>
+                </div>
+
+                <!-- Product 6 -->
+                <div class="product-card">
+                    <div class="product-badge">Premium</div>
+                    <div class="product-image">
+                        <div class="product-image-placeholder">[ LifeLock Image ]</div>
+                    </div>
+                    <h3>Norton LifeLock Ultimate Plus</h3>
+                    <p class="product-desc">Identity & Device Protection</p>
+                    <div class="product-price">$42.99</div>
+                    <a href="product.html?id=norton-lifelock-ultimate" class="btn-product">View Details</a>
                 </div>
             </div>
             
@@ -100,10 +149,50 @@
         </div>
     </section>
 
+    <!-- Trust Building Section -->
+    <section class="trust-building">
+        <div class="container">
+            <h2 class="section-title">Why Thousands Trust Secure Digital</h2>
+            <p class="section-subtitle">Your Security is Our Priority</p>
+            
+            <div class="trust-grid">
+                <div class="trust-card">
+                    <h3>🔒 100% Genuine Licenses</h3>
+                    <p>Every license key we sell is sourced directly from authorized distributors. We guarantee authentic products that are fully eligible for official manufacturer updates, support, and warranties. No gray market, no volume licenses—just legitimate protection for your devices.</p>
+                </div>
+
+                <div class="trust-card">
+                    <h3>⚡ Instant Delivery</h3>
+                    <p>We understand that security can't wait. Once your purchase is confirmed, your genuine license key is delivered instantly via email or SMS. Get protected in minutes, not days. Our streamlined "Talk to Sales" process ensures you get exactly what you need without delays.</p>
+                </div>
+
+                <div class="trust-card">
+                    <h3>🏢 NYC-Based Business</h3>
+                    <p>We're not a faceless online store. Secure Digital is a legitimate business with a physical presence at 55 East 10th Street, New York, NY 10003. When you call us, you speak with knowledgeable professionals who understand cybersecurity and are here to help you make the right choice.</p>
+                </div>
+
+                <div class="trust-card">
+                    <h3>💰 Best Price Guarantee</h3>
+                    <p>As a high-volume authorized reseller, we receive wholesale pricing that we pass directly to you. We continuously monitor market prices to ensure you're getting the most competitive rates on premium antivirus software without compromising on authenticity or quality.</p>
+                </div>
+
+                <div class="trust-card">
+                    <h3>️ Authorized Reseller Status</h3>
+                    <p>We maintain official authorized reseller relationships with all the brands we carry. This means you're not just buying a key—you're buying peace of mind knowing your purchase is backed by both Secure Digital and the original manufacturer's support infrastructure.</p>
+                </div>
+
+                <div class="trust-card">
+                    <h3> Personalized Support</h3>
+                    <p>Our dedicated sales team is here to answer your questions and help you choose the right protection for your specific needs. Whether you're protecting a single home computer or securing an entire business, we provide personalized guidance every step of the way.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Why Choose Us Section -->
     <section class="why-choose-us">
         <div class="container">
-            <h2 class="section-title light-text">Why Choose Secure Digital?</h2>
+            <h2 class="section-title">Why Choose Secure Digital?</h2>
             
             <div class="features-grid">
                 <div class="feature-item">
@@ -161,7 +250,7 @@
         </div>
     </section>
 
-    <!-- Footer with Strict Disclaimer -->
+    <!-- Footer -->
     <footer>
         <div class="container">
             <div class="footer-content">
@@ -188,12 +277,11 @@
                 </div>
             </div>
 
-            <!-- STRICT DISCLAIMER (Required for Ads & Legal Compliance) -->
             <div class="disclaimer-box">
                 <strong>IMPORTANT TRADEMARK & RESELLER DISCLAIMER</strong>
                 Secure Digital is an independent, authorized third-party reseller of software and hardware products. 
                 We are not affiliated with, endorsed by, or sponsored by the respective manufacturers. 
-                All product names, logos, images, and brands (including but not limited to Norton, McAfee, Bitdefender, Quick Heal, and LifeLock) are the property of their respective owners. 
+                All product names, logos, images, and brands (including but not limited to Norton, McAfee, Bitdefender, Quick Heal, Avast, and LifeLock) are the property of their respective owners. 
                 Any use of these names, trademarks, and brands on this website is strictly for identification and descriptive purposes only and does not imply any endorsement by the trademark holders. 
                 All products sold are sourced directly from official distributors. For technical support and warranty claims, please contact the original manufacturer.
             </div>
