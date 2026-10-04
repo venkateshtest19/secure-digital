@@ -12,7 +12,6 @@ document.addEventListener("DOMContentLoaded", function() {
             nav.classList.toggle('active');
         });
         
-        // Close menu when clicking on a link
         const navLinks = nav.querySelectorAll('a');
         navLinks.forEach(link => {
             link.addEventListener('click', () => {
@@ -21,7 +20,6 @@ document.addEventListener("DOMContentLoaded", function() {
             });
         });
         
-        // Close menu when clicking outside
         document.addEventListener('click', (e) => {
             if (!nav.contains(e.target) && !mobileMenuToggle.contains(e.target)) {
                 mobileMenuToggle.classList.remove('active');
@@ -61,7 +59,10 @@ document.addEventListener("DOMContentLoaded", function() {
             document.getElementById('p-price').innerText = product.price;
             document.getElementById('p-price-sticky').innerText = product.price;
             document.getElementById('p-desc').innerText = product.shortDesc;
-            document.getElementById('p-image-text').innerHTML = `[ ${product.name} Image ]<br>(Replace with actual image)`;
+            
+            // Inject the actual image
+            const imageContainer = document.getElementById('p-image-text');
+            imageContainer.innerHTML = `<img src="${product.image}" alt="${product.name}" style="max-width: 100%; max-height: 100%; object-fit: contain; border-radius: 8px;">`;
 
             const featuresList = document.getElementById('p-features');
             featuresList.innerHTML = ''; 
@@ -76,7 +77,6 @@ document.addEventListener("DOMContentLoaded", function() {
                 badge.className = `product-badge ${product.badgeClass}`;
                 badge.innerText = product.badge;
                 
-                const imageContainer = document.getElementById('p-image-text');
                 imageContainer.style.position = 'relative';
                 badge.style.position = 'absolute';
                 badge.style.top = '20px';
