@@ -496,3 +496,49 @@ footer { background-color: var(--bg-footer); color: var(--text-body); padding: 4
         grid-template-columns: 1fr;
     }
 }
+/* --- Fix Product Image Sizing --- */
+.product-image {
+    width: 100%;
+    height: 200px; /* Slightly taller for better visibility */
+    background-color: var(--bg-light);
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--border-color);
+    overflow: hidden; /* CRITICAL: Prevents overflow */
+    padding: 10px; /* Adds breathing room */
+}
+
+.product-image img {
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+    object-fit: contain; /* CRITICAL: Shows full image without cropping */
+    display: block;
+}
+
+/* Also fix the single product page image */
+.product-image-placeholder-large {
+    background-color: var(--bg-light);
+    border-radius: 12px;
+    height: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px dashed var(--border-color);
+    text-align: center;
+    padding: 2rem;
+    overflow: hidden; /* CRITICAL */
+}
+
+.product-image-placeholder-large img {
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+    object-fit: contain; /* CRITICAL */
+    border-radius: 8px;
+}
