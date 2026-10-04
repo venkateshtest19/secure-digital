@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Norton 360 Deluxe 2026 | Secure Digital</title>
-    <meta name="description" content="Buy genuine Norton 360 Deluxe 2026 license key instantly. Authorized reseller, best prices, instant delivery.">
+    <title>Product Details | Secure Digital</title>
+    <meta name="description" content="Buy genuine antivirus license keys instantly from Secure Digital, NYC's authorized reseller.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -32,27 +32,22 @@
             <div class="product-layout">
                 
                 <!-- Left: Product Image -->
-                <div class="product-image-placeholder">
-                    [ Product Image Goes Here ]<br>
-                    (e.g., Norton 360 Box Art)
+                <div class="product-image-placeholder" id="p-image-text">
+                    [ Product Image Goes Here ]
                 </div>
 
                 <!-- Right: Product Details -->
                 <div class="product-info">
-                    <h1 class="product-title">Norton 360 Deluxe 2026</h1>
-                    <div class="product-price-large">$29.99</div>
-                    <p class="product-short-desc">Complete, real-time protection for your PC, Mac, smartphone, and tablet. Includes advanced security, Secure VPN, and Dark Web Monitoring.</p>
+                    <h1 class="product-title" id="p-title">Loading...</h1>
+                    <div class="product-price-large" id="p-price">...</div>
+                    <p class="product-short-desc" id="p-desc">Loading product details...</p>
 
-                    <ul class="product-features">
-                        <li><span class="check-icon">✓</span> Protects up to 5 devices simultaneously</li>
-                        <li><span class="check-icon">✓</span> 1 Year Subscription License Key</li>
-                        <li><span class="check-icon">✓</span> Includes Secure VPN for private browsing</li>
-                        <li><span class="check-icon">✓</span> Dark Web Monitoring powered by LifeLock</li>
-                        <li><span class="check-icon">✓</span> 100% Genuine, Authorized Reseller Key</li>
+                    <ul class="product-features" id="p-features">
+                        <!-- Features will be injected here by JS -->
                     </ul>
 
                     <!-- Desktop CTA Button -->
-                    <a href="tel:1234567890" class="btn-primary cta-large"> Talk to Sales & Purchase</a>
+                    <a href="tel:1234567890" class="btn-primary cta-large">📞 Talk to Sales & Purchase</a>
                     
                     <p style="margin-top: 1rem; font-size: 0.9rem; color: #64748b; text-align: center;">
                         Call us directly to verify your order and receive your key instantly.
@@ -62,9 +57,9 @@
         </div>
     </section>
 
-    <!-- Sticky Mobile CTA Bar (Only shows on mobile) -->
+    <!-- Sticky Mobile CTA Bar -->
     <div class="mobile-sticky-cta">
-        <div class="sticky-price">$29.99</div>
+        <div class="sticky-price" id="p-price-sticky">...</div>
         <a href="tel:1234567890" class="btn-primary">📞 Call to Buy</a>
     </div>
 
@@ -110,6 +105,8 @@
         </div>
     </footer>
 
+    <!-- Load Products Data FIRST, then the main script -->
+    <script src="js/products.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>
