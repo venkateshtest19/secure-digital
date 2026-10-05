@@ -542,3 +542,66 @@ footer { background-color: var(--bg-footer); color: var(--text-body); padding: 4
     object-fit: contain; /* CRITICAL */
     border-radius: 8px;
 }
+/* --- Brand Page Specific Styles --- */
+.brand-hero {
+    background: linear-gradient(135deg, #1a1a1a 0%, #333333 100%); /* Dark sleek background for brand focus */
+    color: white;
+    padding: 5rem 5%;
+    text-align: center;
+}
+.brand-hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: white;
+}
+.brand-hero h1 span {
+    color: var(--primary-color);
+}
+.brand-hero p {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 0 auto 2rem auto;
+    color: #cbd5e1;
+}
+
+.brand-features-section {
+    padding: 5rem 0;
+    background-color: var(--bg-white);
+}
+
+/* --- Updated Home Page Hero (Single Column) --- */
+.hero-content-single {
+    display: block;
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+}
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+}
+.btn-secondary {
+    background-color: transparent;
+    color: var(--text-main);
+    padding: 0.8rem 1.5rem;
+    border-radius: 6px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    border: 2px solid var(--text-main);
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+.btn-secondary:hover {
+    background-color: var(--text-main);
+    color: var(--bg-white);
+}
+
+@media (max-width: 768px) {
+    .brand-hero h1 { font-size: 2.2rem; }
+    .hero-buttons { flex-direction: column; align-items: center; }
+    .btn-secondary { width: 100%; max-width: 300px; }
+}
