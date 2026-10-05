@@ -654,34 +654,52 @@ footer { background-color: var(--bg-footer); color: var(--text-body); padding: 4
     .hero-buttons { flex-direction: column; align-items: center; }
     .btn-secondary { width: 100%; max-width: 300px; }
 }
-/* --- Responsive Hero Backgrounds for Norton Page --- */
+/* --- Responsive Fixes for Mobile/Tablet --- */
 
-/* Tablet and Mobile Screens (Uses the new mobile image) */
+/* Tablet and Mobile Screens */
 @media (max-width: 1024px) {
     .brand-hero {
-        /* Dark overlay + your new mobile image */
-        background-image: linear-gradient(rgba(15, 23, 42, 0.85), rgba(15, 23, 42, 0.85)), url('../images/norton_productpage_mobile.png');
+        /* Reduced opacity to 0.35 to make the mobile image much brighter and visible */
+        background-image: linear-gradient(rgba(15, 23, 42, 0.35), rgba(15, 23, 42, 0.35)), url('../images/norton_productpage_mobile.png');
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
-        padding: 4rem 5%; /* Adjusted padding for smaller screens */
+        padding: 4rem 5%;
     }
 
     .brand-hero h1 {
-        font-size: 2.5rem; /* Slightly smaller heading for tablet/mobile */
-    }
-
-    .brand-hero p {
-        font-size: 1.1rem;
+        font-size: 2.5rem;
     }
 }
 
-/* Extra small mobile screens */
-@media (max-width: 480px) {
+/* Specific Mobile Fixes (Button Text & Brightness) */
+@media (max-width: 768px) {
     .brand-hero {
         padding: 3rem 5%;
+        /* Ensure the lighter overlay applies on mobile too */
+        background-image: linear-gradient(rgba(15, 23, 42, 0.35), rgba(15, 23, 42, 0.35)), url('../images/norton_productpage_mobile.png');
     }
+
     .brand-hero h1 {
-        font-size: 2rem;
+        font-size: 2.2rem;
+    }
+
+    /* Fix the button to be one line on mobile */
+    .brand-hero .btn-primary {
+        font-size: 0.9rem !important; /* Smaller text */
+        padding: 1rem 1.5rem !important; /* Adjust padding */
+        width: 100%; /* Make button full width/long */
+        max-width: 380px; /* Cap the width so it doesn't touch edges */
+        white-space: nowrap; /* Force text to stay on one line */
+        display: inline-block;
+        margin: 0 auto;
+    }
+}
+
+/* Extra small screens */
+@media (max-width: 480px) {
+    .brand-hero .btn-primary {
+        font-size: 0.8rem !important; /* Even smaller text for tiny phones */
+        max-width: 100%; 
     }
 }
