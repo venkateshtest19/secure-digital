@@ -544,21 +544,21 @@ footer { background-color: var(--bg-footer); color: var(--text-body); padding: 4
 }
 /* --- Brand Page Specific Styles --- */
 .brand-hero {
-    /* This adds a dark transparent layer over your image so text is readable */
-    background: linear-gradient(rgba(15, 23, 42, 0.8), rgba(15, 23, 42, 0.8)), url('../images/norton_productpage.png');
+    /* Reduced opacity (0.6) so the image is brighter and more visible */
+    background: linear-gradient(rgba(15, 23, 42, 0.6), rgba(15, 23, 42, 0.6)), url('../images/norton_productpage.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     color: white;
-    padding: 6rem 5%; /* Slightly taller to showcase the image */
+    padding: 6rem 5%;
     text-align: center;
 }
 
 .brand-hero h1 {
-    font-size: 3.5rem; /* Slightly larger to stand out against the busy background */
+    font-size: 3.5rem;
     margin-bottom: 1rem;
     color: white;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.5); /* Adds a shadow to text for extra readability */
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
 }
 
 .brand-hero h1 span {
@@ -573,9 +573,49 @@ footer { background-color: var(--bg-footer); color: var(--text-body); padding: 4
     text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
 }
 
-.brand-features-section {
-    padding: 5rem 0;
-    background-color: var(--bg-white);
+/* --- Responsive Fixes for Mobile/Tablet --- */
+
+/* Tablet and Mobile Screens */
+@media (max-width: 1024px) {
+    .brand-hero {
+        /* Use the mobile image for tablets and phones */
+        background-image: linear-gradient(rgba(15, 23, 42, 0.6), rgba(15, 23, 42, 0.6)), url('../images/norton_productpage_mobile.png');
+        padding: 4rem 5%;
+    }
+
+    .brand-hero h1 {
+        font-size: 2.5rem;
+    }
+}
+
+/* Specific Mobile Fixes (Button Text) */
+@media (max-width: 768px) {
+    .brand-hero {
+        padding: 3rem 5%;
+    }
+
+    .brand-hero h1 {
+        font-size: 2.2rem;
+    }
+
+    /* Fix the button to be one line on mobile */
+    .brand-hero .btn-primary {
+        font-size: 0.9rem !important; /* Smaller text */
+        padding: 1rem 1.5rem !important; /* Adjust padding */
+        width: 100%; /* Make button full width/long */
+        max-width: 380px; /* Cap the width so it doesn't touch edges */
+        white-space: nowrap; /* Force text to stay on one line */
+        display: inline-block;
+        margin: 0 auto;
+    }
+}
+
+/* Extra small screens */
+@media (max-width: 480px) {
+    .brand-hero .btn-primary {
+        font-size: 0.8rem !important; /* Even smaller text for tiny phones */
+        max-width: 100%; 
+    }
 }
 
 /* --- Updated Home Page Hero (Single Column) --- */
