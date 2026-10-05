@@ -544,24 +544,33 @@ footer { background-color: var(--bg-footer); color: var(--text-body); padding: 4
 }
 /* --- Brand Page Specific Styles --- */
 .brand-hero {
-    background: linear-gradient(135deg, #1a1a1a 0%, #333333 100%); /* Dark sleek background for brand focus */
+    /* This adds a dark transparent layer over your image so text is readable */
+    background: linear-gradient(rgba(15, 23, 42, 0.8), rgba(15, 23, 42, 0.8)), url('../images/norton_productpage.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     color: white;
-    padding: 5rem 5%;
+    padding: 6rem 5%; /* Slightly taller to showcase the image */
     text-align: center;
 }
+
 .brand-hero h1 {
-    font-size: 3rem;
+    font-size: 3.5rem; /* Slightly larger to stand out against the busy background */
     margin-bottom: 1rem;
     color: white;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5); /* Adds a shadow to text for extra readability */
 }
+
 .brand-hero h1 span {
     color: var(--primary-color);
 }
+
 .brand-hero p {
     font-size: 1.2rem;
     max-width: 800px;
     margin: 0 auto 2rem auto;
-    color: #cbd5e1;
+    color: #f1f5f9;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
 }
 
 .brand-features-section {
