@@ -15,15 +15,31 @@
     <!-- Header -->
     <header>
         <div class="logo">Secure <span>Digital</span></div>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="shop.html">Shop</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-        <a href="tel:1234567890" class="btn-primary">Talk to Sales</a>
+        <div class="header-right">
+            <a href="tel:+18553010308" class="btn-primary header-btn">Call Now</a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li class="dropdown">
+                        <a href="#" style="cursor: pointer;">Brands ▾</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="norton.html">Norton</a></li>
+                            <li><a href="mcafee.html">McAfee</a></li>
+                            <li><a href="bitdefender.html">Bitdefender</a></li>
+                            <li><a href="quick-heal.html">Quick Heal</a></li>
+                            <li><a href="npav.html">NPAV</a></li>
+                            <li><a href="avast.html">Avast</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <button class="mobile-menu-toggle" aria-label="Toggle Menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
     </header>
 
     <!-- Page Header -->
@@ -54,7 +70,7 @@
                             <div class="contact-icon">📞</div>
                             <div>
                                 <h4>Call Us</h4>
-                                <p><a href="tel:1234567890">123-456-7890</a></p>
+                                <p><a href="tel:+18553010308">+1-855-301-0308</a></p>
                                 <p style="font-size: 0.85rem; margin-top: 4px;">Mon - Fri: 9:00 AM - 6:00 PM EST</p>
                             </div>
                         </div>
@@ -63,41 +79,33 @@
                             <div class="contact-icon">✉️</div>
                             <div>
                                 <h4>Email Us</h4>
-                                <p><a href="mailto:sales@securedigital.com">sales@securedigital.com</a></p>
+                                <p><a href="mailto:securedigital@atomicmail.io">securedigital@atomicmail.io</a></p>
                             </div>
                         </div>
                     </div>
 
                     <!-- Google Map Embed -->
                     <div class="map-container">
-                        <iframe 
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3023.235468234567!2d-73.9915!3d40.7325!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25990f1c12345%3A0x1234567890abcdef!2s55%20E%2010th%20St%2C%20New%20York%2C%20NY%2010003!5e0!3m2!1sen!2sus!4v1690000000000!5m2!1sen!2sus" 
-                            allowfullscreen="" 
-                            loading="lazy" 
-                            referrerpolicy="no-referrer-when-downgrade">
-                        </iframe>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3023.235468234567!2d-73.9915!3d40.7325!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25990f1c12345%3A0x1234567890abcdef!2s55%20E%2010th%20St%2C%20New%20York%2C%20NY%2010003!5e0!3m2!1sen!2sus!4v1690000000000!5m2!1sen!2sus" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
                 </div>
 
                 <!-- Right: Contact Form -->
                 <div class="contact-form-card">
-                    <h2 style="margin-bottom: 1.5rem; color: var(--dark-bg);">Send us a Message</h2>
+                    <h2 style="margin-bottom: 1.5rem; color: var(--text-main);">Send us a Message</h2>
                     <form action="#" method="POST">
                         <div class="form-group">
                             <label for="name">Full Name *</label>
                             <input type="text" id="name" name="name" placeholder="John Doe" required>
                         </div>
-
                         <div class="form-group">
                             <label for="email">Email Address *</label>
                             <input type="email" id="email" name="email" placeholder="john@example.com" required>
                         </div>
-
                         <div class="form-group">
                             <label for="phone">Phone Number</label>
-                            <input type="tel" id="phone" name="phone" placeholder="123-456-7890">
+                            <input type="tel" id="phone" name="phone" placeholder="+1-855-301-0308">
                         </div>
-
                         <div class="form-group">
                             <label for="product">Interested Product</label>
                             <select id="product" name="product">
@@ -109,15 +117,13 @@
                                 <option value="other">Other</option>
                             </select>
                         </div>
-
                         <div class="form-group">
                             <label for="message">Message *</label>
                             <textarea id="message" name="message" placeholder="How can we help you today?" required></textarea>
                         </div>
-
                         <button type="submit" class="btn-primary" style="width: 100%; border: none; cursor: pointer;">Send Message</button>
                     </form>
-                    <p style="margin-top: 1rem; font-size: 0.85rem; color: #64748b; text-align: center;">
+                    <p style="margin-top: 1rem; font-size: 0.85rem; color: var(--text-muted); text-align: center;">
                         By submitting this form, you agree to our <a href="privacy-policy.html" style="color: var(--primary-color); text-decoration: underline;">Privacy Policy</a>.
                     </p>
                 </div>
@@ -133,7 +139,18 @@
                 <div class="footer-links">
                     <h3>Secure Digital</h3>
                     <p>55 East 10th Street,<br>New York, NY 10003<br>United States</p>
-                    <p style="margin-top: 10px;">Phone: <a href="tel:1234567890" style="color: var(--primary-color);">123-456-7890</a></p>
+                    <p style="margin-top: 10px;">Phone: <a href="tel:+18553010308" style="color: var(--primary-color); font-weight: bold;">+1-855-301-0308</a></p>
+                </div>
+                <div class="footer-links">
+                    <h3>Brands</h3>
+                    <ul>
+                        <li><a href="norton.html">Norton</a></li>
+                        <li><a href="mcafee.html">McAfee</a></li>
+                        <li><a href="bitdefender.html">Bitdefender</a></li>
+                        <li><a href="quick-heal.html">Quick Heal</a></li>
+                        <li><a href="npav.html">NPAV</a></li>
+                        <li><a href="avast.html">Avast</a></li>
+                    </ul>
                 </div>
                 <div class="footer-links">
                     <h3>Quick Links</h3>
@@ -148,26 +165,20 @@
                     <ul>
                         <li><a href="privacy-policy.html">Privacy Policy</a></li>
                         <li><a href="refund-policy.html">Refund Policy</a></li>
+                        <li><a href="terms-and-conditions.html">Terms & Conditions</a></li>
                         <li><a href="disclaimer.html">Disclaimer</a></li>
                     </ul>
                 </div>
             </div>
-
             <div class="disclaimer-box">
                 <strong>IMPORTANT TRADEMARK & RESELLER DISCLAIMER</strong>
-                Secure Digital is an independent, authorized third-party reseller of software and hardware products. 
-                We are not affiliated with, endorsed by, or sponsored by the respective manufacturers. 
-                All product names, logos, images, and brands (including but not limited to Norton, McAfee, Bitdefender, Quick Heal, and LifeLock) are the property of their respective owners. 
-                Any use of these names, trademarks, and brands on this website is strictly for identification and descriptive purposes only and does not imply any endorsement by the trademark holders. 
-                All products sold are sourced directly from official distributors. For technical support and warranty claims, please contact the original manufacturer.
+                Secure Digital is an independent, authorized third-party reseller of software and hardware products. We are not affiliated with, endorsed by, or sponsored by the respective manufacturers. All product names, logos, images, and brands (including but not limited to Norton, McAfee, Bitdefender, Quick Heal, Avast, and LifeLock) are the property of their respective owners. Any use of these names is strictly for identification purposes only.
             </div>
-
-            <div class="copyright">
-                &copy; 2026 Secure Digital. All Rights Reserved.
-            </div>
+            <div class="copyright">&copy; 2026 Secure Digital. All Rights Reserved.</div>
         </div>
     </footer>
 
+    <script src="js/products.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>
