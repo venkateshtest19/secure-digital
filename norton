@@ -1,1 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buy Norton Antivirus & LifeLock | Secure Digital</title>
+    <meta name="description" content="Purchase genuine Norton 360, Norton AntiVirus, and LifeLock Ultimate Plus licenses instantly. Authorized reseller, best prices. Call +1-855-301-0308.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
 
+    <!-- Header -->
+    <header>
+        <div class="logo">Secure <span>Digital</span></div>
+        <div class="header-right">
+            <a href="tel:+18553010308" class="btn-primary header-btn">Talk to Sales</a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <button class="mobile-menu-toggle" aria-label="Toggle Menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Brand Hero Section -->
+    <section class="brand-hero">
+        <div class="container">
+            <h1>Norton <span>360 & LifeLock</span></h1>
+            <p>Experience the gold standard in cybersecurity. As an authorized reseller, we provide genuine Norton licenses featuring industry-leading antivirus protection, Secure VPN, and LifeLock identity theft protection.</p>
+            <a href="tel:+18553010308" class="btn-primary" style="font-size: 1.1rem; padding: 1rem 2rem;">📞 Call to Buy Norton: +1-855-301-0308</a>
+        </div>
+    </section>
+
+    <!-- Norton Products Grid -->
+    <section class="featured-products">
+        <div class="container">
+            <h2 class="section-title">Shop Genuine Norton Licenses</h2>
+            <p class="section-subtitle">Instant Delivery. 100% Authentic. Best Prices.</p>
+            
+            <div class="product-grid">
+                <!-- Norton 360 Advanced -->
+                <div class="product-card">
+                    <div class="product-badge">Premium</div>
+                    <div class="product-image"><img src="images/Norton 360 Advanced.webp" alt="Norton 360 Advanced"></div>
+                    <h3>Norton 360 Advanced</h3>
+                    <p class="product-desc">Premium protection for up to 10 devices</p>
+                    <div class="product-price">$19.99</div>
+                    <a href="product.html?id=norton-360-advanced" class="btn-product">View Details</a>
+                </div>
+
+                <!-- Norton AntiVirus Plus -->
+                <div class="product-card">
+                    <div class="product-image"><img src="images/Norton AntiVirus Plus.webp" alt="Norton AntiVirus Plus"></div>
+                    <h3>Norton AntiVirus Plus</h3>
+                    <p class="product-desc">Essential protection for 1 PC or Mac</p>
+                    <div class="product-price">$20.00</div>
+                    <a href="product.html?id=norton-antivirus-plus" class="btn-product">View Details</a>
+                </div>
+
+                <!-- Norton 360 Deluxe -->
+                <div class="product-card">
+                    <div class="product-badge">Popular</div>
+                    <div class="product-image"><img src="images/Norton 360 Deluxe 2026.webp" alt="Norton 360 Deluxe 2026"></div>
+                    <h3>Norton 360 Deluxe 2026</h3>
+                    <p class="product-desc">Complete protection for up to 5 devices</p>
+                    <div class="product-price">$29.99</div>
+                    <a href="product.html?id=norton-360-deluxe" class="btn-product">View Details</a>
+                </div>
+
+                <!-- Norton AntiTrack -->
+                <div class="product-card">
+                    <div class="product-image"><img src="images/Norton AntiTrack.webp" alt="Norton AntiTrack"></div>
+                    <h3>Norton AntiTrack</h3>
+                    <p class="product-desc">Block trackers & protect online privacy</p>
+                    <div class="product-price">$39.99</div>
+                    <a href="product.html?id=norton-antitrack" class="btn-product">View Details</a>
+                </div>
+
+                <!-- Norton LifeLock Ultimate Plus -->
+                <div class="product-card">
+                    <div class="product-badge" style="background-color: var(--accent-green); color: white;">Top Tier</div>
+                    <div class="product-image"><img src="images/Norton LifeLock Ultimate Plus.webp" alt="Norton LifeLock Ultimate Plus"></div>
+                    <h3>Norton LifeLock Ultimate Plus</h3>
+                    <p class="product-desc">Ultimate Identity & Device Protection</p>
+                    <div class="product-price">$42.99</div>
+                    <a href="product.html?id=norton-lifelock-ultimate" class="btn-product">View Details</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Norton Section -->
+    <section class="brand-features-section">
+        <div class="container">
+            <h2 class="section-title">Why Choose Norton Security?</h2>
+            <p class="section-subtitle">The most trusted name in digital protection</p>
+            
+            <div class="trust-grid">
+                <div class="trust-card">
+                    <h3>️ Advanced Threat Protection</h3>
+                    <p>Norton uses a multi-layered security engine that protects your devices against viruses, malware, ransomware, and phishing attacks before they can do any harm.</p>
+                </div>
+                <div class="trust-card">
+                    <h3>🔒 LifeLock Identity Protection</h3>
+                    <p>Selected plans include LifeLock, which alerts you if your Social Security number, bank accounts, or credit cards are being misused by identity thieves.</p>
+                </div>
+                <div class="trust-card">
+                    <h3>🌐 Secure VPN Included</h3>
+                    <p>Browse privately and securely, even on public Wi-Fi. Norton's Secure VPN encrypts your online activity, keeping your data safe from hackers and snoopers.</p>
+                </div>
+                <div class="trust-card">
+                    <h3>🕵️ Dark Web Monitoring</h3>
+                    <p>Norton continuously scans the dark web for your personal information and alerts you if it finds your data being traded by cybercriminals.</p>
+                </div>
+                <div class="trust-card">
+                    <h3>☁️ PC Cloud Backup</h3>
+                    <p>Protect your important files, photos, and documents with secure cloud backup storage, ensuring you never lose your precious memories to a hard drive crash.</p>
+                </div>
+                <div class="trust-card">
+                    <h3>📱 Multi-Device Coverage</h3>
+                    <p>One subscription protects all your devices. Whether you use Windows, macOS, Android, or iOS, Norton has you covered seamlessly across all platforms.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-links">
+                    <h3>Secure Digital</h3>
+                    <p>55 East 10th Street,<br>New York, NY 10003<br>United States</p>
+                    <p style="margin-top: 10px;">Phone: <a href="tel:+18553010308" style="color: var(--primary-color); font-weight: bold;">+1-855-301-0308</a></p>
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="shop.html">Shop Antivirus</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h3>Legal & Policies</h3>
+                    <ul>
+                        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                        <li><a href="refund-policy.html">Refund Policy</a></li>
+                        <li><a href="disclaimer.html">Disclaimer</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="disclaimer-box">
+                <strong>IMPORTANT TRADEMARK & RESELLER DISCLAIMER</strong>
+                Secure Digital is an independent, authorized third-party reseller of software and hardware products. We are not affiliated with, endorsed by, or sponsored by the respective manufacturers. All product names, logos, images, and brands (including but not limited to Norton, McAfee, Bitdefender, Quick Heal, Avast, and LifeLock) are the property of their respective owners. Any use of these names is strictly for identification purposes only.
+            </div>
+            <div class="copyright">&copy; 2026 Secure Digital. All Rights Reserved.</div>
+        </div>
+    </footer>
+
+    <script src="js/products.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
