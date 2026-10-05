@@ -366,3 +366,27 @@ footer { background-color: var(--bg-footer); color: var(--text-body); padding: 4
     .section-title { font-size: 1.8rem; }
     .brand-hero .btn-primary { font-size: 0.8rem !important; max-width: 100%; }
 }
+/* --- Global Fix for Brand Page Buttons on Mobile --- */
+@media (max-width: 768px) {
+    .brand-hero .btn-primary, 
+    .how-it-works .btn-primary {
+        font-size: 0.8rem !important; 
+        padding: 1rem 0.5rem !important; 
+        width: 100% !important; 
+        max-width: 100% !important; 
+        white-space: nowrap !important; /* Forces text to stay on one line */
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: block !important;
+        margin: 0 auto;
+        box-sizing: border-box;
+    }
+}
+
+@media (max-width: 480px) {
+    .brand-hero .btn-primary, 
+    .how-it-works .btn-primary {
+        font-size: 0.7rem !important; /* Even smaller for tiny screens */
+        padding: 0.9rem 0.5rem !important; 
+    }
+}
