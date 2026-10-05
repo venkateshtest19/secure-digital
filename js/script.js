@@ -1,29 +1,47 @@
 document.addEventListener("DOMContentLoaded", function() {
     
     // ==========================================
-    // 1. MOBILE MENU TOGGLE
+    // 1. MOBILE MENU TOGGLE & DROPDOWN LOGIC
     // ==========================================
     const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
     const nav = document.querySelector('nav');
+    const brandsToggle = document.querySelector('.dropdown > a');
+    const dropdownLi = document.querySelector('.dropdown');
 
     if (mobileMenuToggle && nav) {
-        mobileMenuToggle.addEventListener('click', () => {
+        // Toggle the main menu
+        mobileMenuToggle.addEventListener('click', (e) => {
+            e.stopPropagation(); // Prevent immediate closing
             mobileMenuToggle.classList.toggle('active');
             nav.classList.toggle('active');
         });
         
-        const navLinks = nav.querySelectorAll('a');
-        navLinks.forEach(link => {
+        // Handle "Brands" click specifically
+        if (brandsToggle && dropdownLi) {
+            brandsToggle.addEventListener('click', (e) => {
+                e.preventDefault(); // Stop page from jumping to top
+                e.stopPropagation(); // Stop menu from closing
+                // Toggle the dropdown visibility
+                dropdownLi.classList.toggle('mobile-open');
+            });
+        }
+
+        // Close menu ONLY when a final page link is clicked (not the Brands toggle)
+        const finalLinks = nav.querySelectorAll('a:not(.dropdown > a)');
+        finalLinks.forEach(link => {
             link.addEventListener('click', () => {
                 mobileMenuToggle.classList.remove('active');
                 nav.classList.remove('active');
+                if(dropdownLi) dropdownLi.classList.remove('mobile-open');
             });
         });
         
+        // Close menu when clicking outside of it
         document.addEventListener('click', (e) => {
             if (!nav.contains(e.target) && !mobileMenuToggle.contains(e.target)) {
                 mobileMenuToggle.classList.remove('active');
                 nav.classList.remove('active');
+                if(dropdownLi) dropdownLi.classList.remove('mobile-open');
             }
         });
     }
@@ -60,7 +78,6 @@ document.addEventListener("DOMContentLoaded", function() {
             document.getElementById('p-price-sticky').innerText = product.price;
             document.getElementById('p-desc').innerText = product.shortDesc;
             
-            // Inject the actual image
             const imageContainer = document.getElementById('p-image-text');
             imageContainer.innerHTML = `<img src="${product.image}" alt="${product.name}" style="max-width: 100%; max-height: 100%; object-fit: contain; border-radius: 8px;">`;
 
@@ -108,5 +125,4 @@ document.addEventListener("DOMContentLoaded", function() {
             }
         }
     }
-
 });
