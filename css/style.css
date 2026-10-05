@@ -614,3 +614,34 @@ footer { background-color: var(--bg-footer); color: var(--text-body); padding: 4
     .hero-buttons { flex-direction: column; align-items: center; }
     .btn-secondary { width: 100%; max-width: 300px; }
 }
+/* --- Responsive Hero Backgrounds for Norton Page --- */
+
+/* Tablet and Mobile Screens (Uses the new mobile image) */
+@media (max-width: 1024px) {
+    .brand-hero {
+        /* Dark overlay + your new mobile image */
+        background-image: linear-gradient(rgba(15, 23, 42, 0.85), rgba(15, 23, 42, 0.85)), url('../images/norton_productpage_mobile.png');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        padding: 4rem 5%; /* Adjusted padding for smaller screens */
+    }
+
+    .brand-hero h1 {
+        font-size: 2.5rem; /* Slightly smaller heading for tablet/mobile */
+    }
+
+    .brand-hero p {
+        font-size: 1.1rem;
+    }
+}
+
+/* Extra small mobile screens */
+@media (max-width: 480px) {
+    .brand-hero {
+        padding: 3rem 5%;
+    }
+    .brand-hero h1 {
+        font-size: 2rem;
+    }
+}
